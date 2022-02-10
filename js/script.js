@@ -6,5 +6,11 @@ $(document).ready(function() {
         } else {
             $('.navbar').removeClass("sticky");
         }
-    })
+    });
+
+    // Animation menu à bascule
+    $('.menu-btn').click(function() {
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
 });
