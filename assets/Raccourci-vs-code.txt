@@ -1,0 +1,13 @@
+alt flèche, haut bas: deplace les éléments sélectionner.
+ctrl f ctrl h: recherche remplace les éléments un par un.
+ctrl k c: met en commentaire.
+alt ctrl flèche droite: split l'écran en deux.
+(flèche gauche pour le retour).
+ctrl k f: réindentations des lignes de code.
+alt z: retour à la ligne.
+ctrl: déplacement mot a mot.
+ctrl maj: sélection d'un texte mot à mot.
+alt maj: sélection de tout le texte.
+ctrl i: sélection de toute la ligne, balise inclu.
+alt ctrl flèche bas ou haut: multi curseur.
+ctrl d: sélection multi balise. 

@@ -1,4 +1,4 @@
 #788AA3 = bleu clair
 #303036 = bleu foncé
-#92B6B1 = vert clair
-#FFA552 = orange
+# = vert clair
+92B6B1#FFA552 = orange

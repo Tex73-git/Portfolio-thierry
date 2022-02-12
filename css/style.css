@@ -151,7 +151,7 @@ section .title::after {
 .about .title::after {
     content: "Qui je suis";
 }
-.about .about-content {
+.about .about-content, .services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -198,9 +198,51 @@ section .title::after {
 }
 
 /* Style de la section services */
+.services {
+    color: #fff;
+    background: #788AA3;
+}
+.services .title::before {
+    background: #fff;
+}
 .services .title::after {
+    color: #fff;
+    background: #788AA3;
     content: "Ce que je propose";
 }
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #303036;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    box-shadow: .4em .4em .5em #FFA552;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+    background: #92B6B1;
+}
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+.services .serv-content .card i {
+    font-size: 50px;
+    color: #FFA552;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+    color: #111;
+}
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 
 /* Responsive média query start */
 @media (max-width: 1300px) {
@@ -273,6 +315,10 @@ section .title::after {
     .about .about-content .right {
         flex: 100%;
     }
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 690px) {
     .max-width {
@@ -287,6 +333,9 @@ section .title::after {
     .home .home-content a {
         font-size: 20px;
     }
+    .services .serv-content .card {
+        width: 100%;
+    }
 }
 @media (max-width: 500px) {
     .max-width {
@@ -297,6 +346,9 @@ section .title::after {
     }
     .home .home-content .text-3 {
         font-size: 27px;
+    }
+    section .title::after {
+        font-size: 15px;
     }
 }
 /* Responsive média query end */
