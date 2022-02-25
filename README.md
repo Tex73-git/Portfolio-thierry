@@ -12,3 +12,11 @@ Création et responsivité de la section services.
 Création et responsivité de la section compétences.
 
 Création et responsivité de la section teams.
+
+Création et responsivité de la section contact.
+
+Création et responsivité de la section map.
+
+Création et responsivité du footer.
+
+Mise en place de la fonction typeScript.
