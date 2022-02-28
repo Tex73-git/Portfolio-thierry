@@ -379,11 +379,13 @@ section .title::before {
 }
 .portfolio-wrapper .item {
     width: 85%;
+    text-align: center;
 }
 .item img {
     display: inline-block;
     width: 400px;
     height: 300px;
+    text-align: center;
     object-fit: cover;
     overflow: hidden;
     vertical-align: top;
@@ -626,7 +628,7 @@ footer span a:hover {
         margin-left: 0px;
     }
 }
-@media (max-width: 1104px) {
+@media (max-width: 1180px) {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
@@ -643,6 +645,10 @@ footer span a:hover {
     }
     .portfolio-wrapper .item {
         width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .item img {
         text-align: center;
         margin: 10px auto;
     }
@@ -727,8 +733,6 @@ footer span a:hover {
     }
     .item img {
         width: 100%;
-        text-align: center;
-        margin: 10px auto;
     }
 }
 @media (max-width: 690px) {
