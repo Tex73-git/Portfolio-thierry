@@ -186,7 +186,7 @@ section .title::before {
 /* Style de la section about */
 
 .about {
-    background: rgba(146, 182, 177,0.5);
+    background: #788AA3;
 }
 .about .about-content .left {
     width: 45%;
@@ -212,13 +212,14 @@ section .title::before {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #303036;
+    color: #fff;
 }
 .about .about-content .right .text span {
     color: #FFA552;
 }
 .about .about-content .right p {
     text-align: justify;
+    color: #fff;
 }
 .about .about-content .right a {
     display: inline-block;
