@@ -24,3 +24,5 @@ Mise en place de la fonction typeScript.
 Création et responsivité de la section portfolio.
 
 mise en place du menu portfolio.
+
+Mise en place de contact.php
