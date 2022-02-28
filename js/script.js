@@ -8,7 +8,7 @@ $(document).ready(function() {
             $('.navbar').removeClass("sticky");
         }
         // Annimation au scroll du btn retour en haut
-        if(this.scrollY > 500) {
+        if(this.scrollY > 50) {
             $('.scroll-up-btn').addClass("show");
         } else {
             $('.scroll-up-btn').removeClass("show");
