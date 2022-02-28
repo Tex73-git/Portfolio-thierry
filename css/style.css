@@ -378,15 +378,19 @@ section .title::before {
     font-size: 25px;
 }
 .portfolio-wrapper .item {
-    width: 80%;
+    width: 85%;
 }
 .item img {
     display: inline-block;
-    width: 30%;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
     overflow: hidden;
     vertical-align: top;
     margin: 10px;
     border: 1px solid #303036;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .portfolio-wrapper li.active {
     background: #FFA552;
@@ -640,6 +644,7 @@ footer span a:hover {
     .portfolio-wrapper .item {
         width: 100%;
         text-align: center;
+        margin: 10px auto;
     }
 }
 @media (max-width: 991px) {
@@ -720,6 +725,11 @@ footer span a:hover {
         width: 100%;
         margin-bottom: 35px;
     }
+    .item img {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
 }
 @media (max-width: 690px) {
     .max-width {
@@ -740,9 +750,6 @@ footer span a:hover {
     .portfolio-wrapper li {
         display: block;
         text-align: center;
-    }
-    .item img {
-        width: 100%;
     }
 }
 @media (max-width: 500px) {
