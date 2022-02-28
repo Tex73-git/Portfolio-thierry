@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 
+/* Style de la page d'acceuil */
 /* Style de la navbar */
 
 .max-width {
@@ -142,11 +143,12 @@
 section {
     padding: 100px 0;
 }
-.about, .services, .skills, .teams .contact, footer {
+.about, .services, .skills, .teams .contact, footer, .porfolio {
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, .services .serv-content,
-.skills .skills-content, .contact .contact-content {
+.skills .skills-content, .contact .contact-content,
+.porfolio .port-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -353,6 +355,44 @@ section .title::before {
     margin: 10px 0 7px 0;
 }
 
+/* Style de la section portfolio */
+
+.portfolio {
+    background: #303036;
+    color: #fff;
+}
+.portfolio .title::before {
+    background: #fff;
+}
+.portfolio-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-wrapper ul {
+    min-width: 6%;
+    list-style: none;
+}
+.portfolio-wrapper li {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 25px;
+}
+.portfolio-wrapper .item {
+    width: 80%;
+}
+.item img {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 10px;
+    border: 1px solid #303036;
+}
+.portfolio-wrapper li.active {
+    background: #FFA552;
+    color: #303036;
+}
+
 /* Style de la section teams */
 .teams {
     position: relative;
@@ -525,6 +565,7 @@ section .title::before {
 .contact .right form .button button {
     width: 100%;
     height: 100%;
+    margin-top: 4px;
     border: 2px solid #FFA552;
     background: #FFA552;
     color: #303036;
@@ -573,6 +614,8 @@ footer span a:hover {
 
 
 
+
+
 /* Responsive média query start */
 @media (max-width: 1300px) {
     .home .max-width {
@@ -583,6 +626,20 @@ footer span a:hover {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
+    }
+    .portfolio-wrapper {
+        flex-direction: column;
+    }
+    .portfolio-wrapper ul {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .portfolio-wrapper li {
+        display: inline-block;
+    }
+    .portfolio-wrapper .item {
+        width: 100%;
+        text-align: center;
     }
 }
 @media (max-width: 991px) {
@@ -678,6 +735,13 @@ footer span a:hover {
         font-size: 20px;
     }
     .services .serv-content .card {
+        width: 100%;
+    }
+    .portfolio-wrapper li {
+        display: block;
+        text-align: center;
+    }
+    .item img {
         width: 100%;
     }
 }

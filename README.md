@@ -20,3 +20,7 @@ Création et responsivité de la section map.
 Création et responsivité du footer.
 
 Mise en place de la fonction typeScript.
+
+Création et responsivité de la section portfolio.
+
+mise en place du menu portfolio.

@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio personnel Thierry EXPOSITO</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- JS -->
     <script src="https://kit.fontawesome.com/53d8dd6b1d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="js/script.js" async></script>
-</body>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js" async></script>  
+
 </head>
 
 <body>
@@ -23,8 +26,8 @@
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">accueil</a></li>
                 <li><a href="#about" class="menu-btn">a propos</a></li>
+                <li><a href="#portfolio" class="menu-btn">Portfolio</a></li>
                 <li><a href="#skills" class="menu-btn">compétences</a></li>
                 <li><a href="#services" class="menu-btn">services</a></li>
                 <li><a href="#teams" class="menu-btn">team</a></li>
@@ -42,7 +45,7 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Bonjour, je m'appelle</div>
-                <div class="text-2">Thierry EXPOSITO</div>
+                <div class="text-2">Thierry</div>
                 <div class="text-3">Et je suis développeur <span class="typing"></span></div>
                 <a href="#contact">Contactez-moi</a>
             </div>
@@ -55,15 +58,19 @@
         <div class="max-width">
             <h2 class="title">A propos de moi</h2>
             <div class="about-content">
-                <div class="column left">
+                <div class="column left" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="800">
                     <img src="assets/img/profil.jpg" alt="Photo de profil">
                     <div class="social">
                         <a href="#"><i class="fab fa-github-square"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Je suis Thierry EXPOSITO, développeur <span class="typing-2"></span></div>
+                <div class="column right" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                    <div class="text">Je suis Thierry, développeur <span class="typing-2"></span></div>
                     <p>Passionné d'informatique depuis toujours, je me suis décidé à entamer une reconversion dans le
                         développement Web.
                         Après onze mois de formation, me voici enfin au but. Je me suis donc tout naturellement, tourné
@@ -71,7 +78,7 @@
                         des sites web est devenue une passion et je compte poursuivre dans cette voie. C'est pour cela
                         qu'aujourd'hui je souhaite réaliser
                         de beaux projets avec vous.</p>
-                    <a href="#">Voir mon CV →</a>
+                    <a href="html/portfolio.html">Voir les projets →</a>
                 </div>
             </div>
         </div>
@@ -83,7 +90,7 @@
         <div class="max-width">
             <h2 class="title">Compétences</h2>
             <div class="skills-content">
-                <div class="column left">
+                <div class="column left" data-aos="zoom-in-up" data-aos-duration="800">
                     <div class="text">Expérience</div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis voluptates corporis,
                         nobis voluptate neque,
@@ -95,7 +102,7 @@
                         veniam!</p>
                     <a href="#">En savoir plus →</a>
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="zoom-in-up" data-aos-duration="800">
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
@@ -184,12 +191,44 @@
     </section>
     <!-- Services section end -->
 
+    <!-- Portfolio section start -->
+    <section class="portfolio" id="portfolio">
+        <div class="max-width">
+            <h2 class="title">Portfolio</h2>
+            <div class="port-content">
+                <div class="portfolio-wrapper">
+                    <ul>
+                        <li class="menu-item active" id="projets">Projets</li>
+                        <li class="menu-item" id="wordpress">WordPress</li>
+                        <li class="menu-item" id="exercices">Exercices</li>
+                    </ul>
+                    <div class="item" id="portfolio-projets">
+                        <img src="assets/img/Site planete-digitale.jpg" alt="">
+                        <img src="assets/img/Site les rasoirs.jpg" alt="">
+                        <img src="assets/img/site visage-embellis.jpg" alt=""></li>
+                    </div>
+                    <div class="item" id="portfolio-wordpress">
+                        <img src="assets/img/casino.jpg" alt="">
+                        <img src="assets/img/discotheques.jpeg" alt="">
+                        <img src="assets/img/Accueil.jpg" alt=""></li>
+                    </div>
+                    <div class="item" id="portfolio-exercices">
+                        <img src="assets/img/Site planete-digitale.jpg" alt="">
+                        <img src="assets/img/Site les rasoirs.jpg" alt="">
+                        <img src="assets/img/site visage-embellis.jpg" alt=""></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio section end -->
+
     <!-- Teams section start -->
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">La team</h2>
             <div class="container">
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000">
                     <div class="team-content">
                         <h3>Guillaume</h3>
                         <div class="imgBx"><img src="assets/img/Guillaume.jpg"></div>
@@ -209,7 +248,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-up" data-aos-offset="500" data-aos-easing="ease-in-out" data-aos-duration="1000">
                     <div class="team-content">
                         <h3>Christine</h3>
                         <div class="imgBx"><img src="assets/img/Christine.png"></div>
@@ -229,7 +268,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="team-card">
+                <div class="team-card" data-aos="flip-left" data-aos-offset="400" data-aos-easing="ease-in-out" data-aos-duration="1000">
                     <div class="team-content">
                         <h3>Hyacinthe</h3>
                         <div class="imgBx"><img src="assets/img/Hyacinthe.jpg"></div>
@@ -332,7 +371,9 @@
             réservés</span>
     </footer>
     <!-- Footer section end -->
-
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

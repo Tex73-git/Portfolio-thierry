@@ -1,6 +1,7 @@
 // Fonction qui colorise et réduit la navbar au scroll
 $(document).ready(function() {
     $(window).scroll(function() {
+        // Animation à bascule
         if(this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
@@ -26,6 +27,15 @@ $(document).ready(function() {
         $('.menu-btn i').toggleClass("active");
     });
 
+    // Menu Portfolio
+    $("#portfolio-wordpress, #portfolio-exercices").hide();
+    $(".menu-item").click(function() {
+        $(".menu-item").removeClass("active");
+        $(this).addClass("active");
+        changePortfolio = this.id;
+        $(".item").hide();
+        $("#portfolio-" + changePortfolio).show();
+    });
     
     // Type script animation
     let typed = new Typed(".typing", {
@@ -40,6 +50,8 @@ $(document).ready(function() {
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-    });
+    });  
 });
+
+
 
