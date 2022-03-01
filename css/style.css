@@ -368,7 +368,7 @@ section .title::before {
     font-size: 25px;
 }
 .portfolio-wrapper .item {
-    width: 100%;
+    width: 85%;
     margin-left: 25px;
 }
 .portfolio-wrapper .ui-card {
@@ -385,7 +385,7 @@ section .title::before {
     object-fit: cover;
 }
 .portfolio-wrapper .ui-card:hover img {
-    transform: scale(1.1) translateY(-2px);
+    transform: scale(1.1) translateY();
     opacity: 0.3;
 }
 .portfolio-wrapper .ui-card .description {
