@@ -359,7 +359,7 @@ section .title::before {
     justify-content: space-between;
 }
 .portfolio-wrapper ul {
-    min-width: 6%;
+    min-width: 12%;
     list-style: none;
 }
 .portfolio-wrapper li {
@@ -385,7 +385,7 @@ section .title::before {
     object-fit: cover;
 }
 .portfolio-wrapper .ui-card:hover img {
-    transform: scale(1.1) translateY();
+    transform: scale(1.1) translateY(0);
     opacity: 0.3;
 }
 .portfolio-wrapper .ui-card .description {
@@ -562,12 +562,13 @@ section .title::before {
     width: calc(50% - 30px);
 }
 .contact .contact-content .text {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .contact .contact-content .left p {
     text-align: justify;
+    font-size: 17px;
 }
 .contact .contact-content .left .icons {
     margin: 10px 0;
@@ -590,9 +591,11 @@ section .title::before {
 }
 .contact .contact-content .info .head {
     font-weight: 600;
+    font-size: 18px;
 }
 .contact .contact-content .info .sub-title {
     color: #303036;
+    font-size: 17px;
 }
 .contact .right form .fields {
     display: flex;
