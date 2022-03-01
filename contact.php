@@ -12,6 +12,6 @@
     //         echo "Email non valide !";
     //     }
     // } else {
-    //     heade('location:index.html');
+    //     header('location:index.html');
     //     die();
     // }
