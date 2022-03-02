@@ -26,3 +26,5 @@ Création et responsivité de la section portfolio.
 mise en place du menu portfolio.
 
 Mise en place de contact.php
+
+Mise en place de différent élement et favicon

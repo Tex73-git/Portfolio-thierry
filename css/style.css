@@ -613,7 +613,11 @@ section .title::before {
     color: #303036;
     font-size: 17px;
 }
-.contact .right form .fields {
+/* Code temporaire */
+.contact .right {
+    padding-top: 90px;
+}
+/* .contact .right form .fields {
     display: flex;
 }
 .contact .right form .field,
@@ -670,7 +674,7 @@ section .title::before {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-}
+} */
 
 /* Style de la section footer */
 
@@ -815,6 +819,10 @@ footer span a:hover {
     }
     .item img {
         width: 100%;
+    }
+    /* Code temporaire */
+    .contact .right {
+        padding-top: 0;
     }
 }
 @media (max-width: 690px) {
