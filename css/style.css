@@ -80,7 +80,7 @@
     color: #303036;
     z-index: 9999;
     font-size: 30px;
-    border-radius: 6px;
+    border-radius: 50%;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
@@ -152,7 +152,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 section .title {
     position: relative;
@@ -343,6 +343,22 @@ section .title::before {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.services a {
+    display: inline-block;
+    background: #FFA552;
+    color: #303036;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #FFA552;
+    transition: all 0.3s ease;
+}
+.services a:hover {
+    background: none;
+    border: 2px solid #FFA552;
 }
 
 /* Style de la section portfolio */
