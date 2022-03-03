@@ -12,6 +12,6 @@
         "From:contact@portfolio-thierry.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
         if ($retour) {
-            echo !alert() "<p>L'email a bien été envoyez !</p>";
+            echo "<p>L'email a bien été envoyez !</p>";
         }
     }
