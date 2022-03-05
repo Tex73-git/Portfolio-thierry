@@ -475,7 +475,9 @@ section .title::before {
 }
 
 /* Style de la section teams */
-.teams {
+.teams {    
+    text-align: center;
+    font-size: 18px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -486,10 +488,6 @@ section .title::before {
 }
 .teams .title::before {
     background: #fff;
-}
-.teams p {
-    text-align: center;
-    font-size: 18px;
 }
 .container {
     position: relative;
