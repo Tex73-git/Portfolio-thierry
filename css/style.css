@@ -487,6 +487,10 @@ section .title::before {
 .teams .title::before {
     background: #fff;
 }
+.teams p {
+    text-align: center;
+    font-size: 18px;
+}
 .container {
     position: relative;
     display: flex;
@@ -494,10 +498,6 @@ section .title::before {
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
-}
-p {
-    text-align: center;
-    font-size: 18px;
 }
 .container .team-card {
     position: relative;
