@@ -11,7 +11,7 @@
 
 .max-width {
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 60px;
     margin: auto;
 }
 .navbar {
@@ -372,7 +372,7 @@ section .title::before {
 }
 .portfolio-wrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .portfolio-wrapper ul {
     min-width: 12%;
@@ -384,7 +384,8 @@ section .title::before {
     font-size: 25px;
 }
 .portfolio-wrapper .item {
-    width: 85%;
+    width: 75%;
+    display: inline;
     margin-left: 25px;
 }
 .portfolio-wrapper .ui-card {
