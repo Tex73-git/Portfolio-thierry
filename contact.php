@@ -30,6 +30,9 @@
                 box-sizing: border-box;
                 text-decoration: none;
             }
+            body {
+                background: url(assets/img/portfolio.jpg) no-repeat;
+            }
             .home {
                 display: flex;
                 justify-content: space-around;
