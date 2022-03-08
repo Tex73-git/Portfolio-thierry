@@ -60,7 +60,7 @@
                 padding: 12px 36px;
                 color: #fff;
                 background: #FFA552;
-                margin-top: 20px;
+                margin-top: 6px;
                 justify-content: center;
             }
         </style>
