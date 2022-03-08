@@ -12,7 +12,7 @@
         "From:contact@portfolio-thierry" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
         if ($retour) {
-            echo "<p>Succées</p>";
+            echo "";
         }
     }
     ?>
@@ -31,18 +31,19 @@
                 text-decoration: none;
             }
             body {
-                background: url(assets/img/portfolio.jpg) no-repeat;
+                background-color: #788AA3;
             }
             .home {
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
+                align-items: center;
                 height: 100vh;
                 color: #111;
                 min-height: 500px;
                 font-family: 'Raleway', sans-serif;
             }
             .home .home-content {
-            background: grey;
+            background: #92B6B1;
             height: 200px;
             width: 600px;
             opacity: 0.8;
