@@ -420,16 +420,14 @@ section .title::before {
     justify-items: center;
 }
 .portfolio-wrapper ul {
-    min-width: 18%;
     margin-bottom: 20px;
     list-style: none;
 }
 .portfolio-wrapper li {
     display: inline;
-    font-size: 24px;
+    font-size: 25px;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
     cursor: pointer;
 }
 .portfolio-wrapper .item {
